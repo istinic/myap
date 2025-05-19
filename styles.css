@@ -1,0 +1,176 @@
+html {
+  font-size: 2vw;
+}
+@media (max-width: 700px) {
+  html { font-size: 4vw; }
+}
+@media (max-width: 400px) {
+  html { font-size: 5vw; }
+}
+
+body {
+  font-family: sans-serif;
+  background: #f4f4f4;
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+}
+
+/* Container */
+.container {
+  max-width: 900px;
+  width: 95vw;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 5vw 3vw;
+  text-align: center;
+  box-sizing: border-box;
+}
+@media (max-width: 600px) {
+  .container {
+    padding: 4vw 2vw;
+    margin: 16px auto;
+  }
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: center;
+  margin-top: 32px;
+}
+@media (max-width: 600px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+  }
+  .card-img {
+    width: 60vw;
+    max-width: 140px;
+  }
+}
+
+/* Card Images */
+.card-img {
+  width: 80px;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  background: #fafafa;
+  padding: 4px;
+  transition: box-shadow 0.2s;
+}
+.card-img:hover {
+  box-shadow: 0 2px 12px rgba(0,0,0,0.2);
+  border-color: #aaa;
+}
+
+/* Selected Flag */
+#selectedFlag {
+  font-size: 1.5em;
+  vertical-align: middle;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+@media (max-width: 450px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 6px;
+  }
+}
+.nav-left a,
+.nav-right a {
+  margin: 0 10px;
+  text-decoration: none;
+}
+.nav-right {
+  margin-left: auto;
+  /* Optional: for spacing */
+}
+
+/* Headings */
+h1, h2, h3 {
+  font-size: 2em;
+  margin: 1em 0 0.5em 0;
+}
+
+/* Form Elements */
+form, input, select, button, label, #signUpError {
+  font-size: 1em;
+}
+
+input, select, button {
+  width: 100%;
+  padding: 0.6em;
+  margin: 0.4em 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+button {
+  background: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.2s;
+}
+
+button:hover {
+  background: #0056b3;
+}
+
+/* Miscellaneous tweaks for smallest screens */
+@media (max-width: 400px) {
+  .container {
+    padding: 2vw 2vw;
+  }
+  h1, h2, h3 {
+    font-size: 1.2em;
+  }
+}
+
+.main-header {
+  padding: 1em 0;
+  background: #fff;
+  border-bottom: 1px solid #eee;
+  text-align: right;
+}
+
+.auth-rows {
+  display: inline-block;
+  text-align: left;
+  margin-right: 2vw;
+}
+
+.auth-row {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+  margin-bottom: 2px;
+}
+
+.auth-row a {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: 500;
+  padding: 2px 8px;
+  transition: color 0.2s;
+}
+
+.auth-row a:hover {
+  color: #0056b3;
+}
+}
